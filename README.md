@@ -1,10 +1,14 @@
 # U.S. Bikeshare Project
 ## Overview
 The U.S. Bikeshare Project is an interactive Python script that takes user input and shows a variety of statistics about bikeshare activity in three U.S. cities:
-  *New York City
-  *Chicago
-  *Washington
-The script allows the user to cycle through the process multiple times to view statistics according to different specified criteria.
+  *  New York City
+  *  Chicago
+  *  Washington
+Statistics can be filtered by city, month, and day of the week. A few of the statistics shown include:
+  *  Most popular stations
+  *  Trip durations
+  *  Bikeshare user information 
+
 
 ### Software Requirements
 To interact and edit this project, the following software is required:
@@ -28,3 +32,4 @@ To interact and edit this project, the following software is required:
 
 ### Acknowledgements
 To complete this project, I reviewed various posts on [StackOverflow](https://stackoverflow.com/) as well as utilizing [Google](https://www.google.com/) to review key concepts and terms. The Udacity course material for the Programming for Data Science nanodegree also proved integral in development.
+Additionally, I'd like to acknowledge the following GitHiu
