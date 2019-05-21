@@ -11,10 +11,14 @@ To interact and edit this project, the following software is required:
   * Python
   * Text editor (e.g. Atom, Sublime)
   * Terminal (e.g. GitBash)
-  #### Suggested Software
-    *  [Anaconda](https://www.anaconda.com/distribution/).
-    *  [Atom](https://atom.io/).
-    *  [GitBash](https://git-scm.com/downloads).
+##### Suggested Software
+  - [Anaconda][1]
+  - [Atom][2]
+  - [Git][3]
+
+  [1]: https://www.anaconda.com/distribution/
+  [2]: https://atom.io/
+  [3]: https://git-scm.com/downloads
 
 ### Files Included in U.S. Bikeshare Project
   *  bikeshare_2.py (Python script)
@@ -23,4 +27,4 @@ To interact and edit this project, the following software is required:
   *  washington.csv (Washingon bikeshare data)
 
 ### Acknowledgements
-To complete this project, I reviewed various posts on [StackOverflow](https://stackoverflow.com/) as well as utilizing [Google](https://www.google.com/) to review key concepts and terms. The Udacity course material for the Programming for Data Science nanodegree also proved integral in development. 
+To complete this project, I reviewed various posts on [StackOverflow](https://stackoverflow.com/) as well as utilizing [Google](https://www.google.com/) to review key concepts and terms. The Udacity course material for the Programming for Data Science nanodegree also proved integral in development.
