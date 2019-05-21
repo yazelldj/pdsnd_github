@@ -1,15 +1,26 @@
-### Date created
-Include the date you created this project and README file.
+# U.S. Bikeshare Project
+## Overview
+The U.S. Bikeshare Project is an interactive Python script that takes user input and shows a variety of statistics about bikeshare activity in three U.S. cities:
+  *New York City
+  *Chicago
+  *Washington
+The script allows the user to cycle through the process multiple times to view statistics according to different specified criteria.
 
-### Project Title
-Replace the Project Title
+### Software Requirements
+To interact and edit this project, the following software is required:
+  * Python
+  * Text editor (e.g. Atom, Sublime)
+  * Terminal (e.g. GitBash)
+  #### Suggested Software
+    *  [Anaconda](https://www.anaconda.com/distribution/).
+    *  [Atom](https://atom.io/).
+    *  [GitBash](https://git-scm.com/downloads).
 
-### Description
-Describe what your project is about and what it does
+### Files Included in U.S. Bikeshare Project
+  *  bikeshare_2.py (Python script)
+  *  new_york_city.csv (New York City bikeshare data)
+  *  chicago.csv (Chicago bikeshare data)
+  *  washington.csv (Washingon bikeshare data)
 
-### Files used
-Include the files used
-
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+### Acknowledgements
+To complete this project, I reviewed various posts on [StackOverflow](https://stackoverflow.com/) as well as utilizing [Google](https://www.google.com/) to review key concepts and terms. The Udacity course material for the Programming for Data Science nanodegree also proved integral in development. 
