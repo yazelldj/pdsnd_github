@@ -38,7 +38,7 @@ def get_filters():
     # User input for day of the week, or all, normalized with lower()
     while True:
         day = input("\nFor which day would you like to see data: "
-                    "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday? Or all?\n").lower()
+                    "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, or all?\n").lower()
         if day not in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all'):
             print("Please enter full name of a day of the week. Invalid entry")
             continue
