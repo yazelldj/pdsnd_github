@@ -115,7 +115,7 @@ def time_stats(df):
     df['hour'] = df['Start Time'].values.astype('<M8[h]')
     df['hour'] = df['hour'].dt.time
     frequent_hour = df['hour'].mode()[0]
-    print("The most common time of travel is ", frequent_hour)
+    print("The most common time of the day for travel is ", frequent_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
