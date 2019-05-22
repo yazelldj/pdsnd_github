@@ -26,7 +26,7 @@ def get_filters():
         else:
             break
 
-    # User input for month between January and June, or all, using while loop to ensure valid month input, normalized with lower() 
+    # User input for month between January and June, or all, using while loop to ensure valid month input, normalized with lower()
     while True:
         month = input("\nFor which month would you like to see data: January, February, March, April, May, June, or all? \n").lower()
         if month not in ('january', 'february', 'march', 'april', 'may', 'june', 'all'):
@@ -38,7 +38,7 @@ def get_filters():
     # User input for day of the week, or all, normalized with lower()
     while True:
         day = input("\nFor which day would you like to see data: "
-                    "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday? Or all?\n").lower()
+                    "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, or all?\n").lower()
         if day not in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all'):
             print("Please enter full name of a day of the week. Invalid entry")
             continue
@@ -66,7 +66,7 @@ def load_data(city, month, day):
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
-    # month and day of week from Start Time, creating new columns. Return month name, not integer. 
+    # month and day of week from Start Time, creating new columns. Return month name, not integer.
     df['month'] = df['Start Time'].dt.strftime('%B')
     df['day_of_week'] = df['Start Time'].dt.weekday_name
 
@@ -85,9 +85,9 @@ def load_data(city, month, day):
 
 def display_data(df):
     """Displays five rows of the data in no order"""
-    
+
     while True:
-        data_rows = input("Would you like to see five rows of data? Y or N\n").lower()
+        data_rows = input("Would you like to see a sample of the data? Y or N\n").lower()
         if data_rows == 'y':
             print( df.sample(5))
         elif data_rows == 'n':
@@ -111,11 +111,11 @@ def time_stats(df):
     frequent_day = df['day_of_week'].mode()[0]
     print("The most common day of the week is ", frequent_day)
 
-    # display the most common start hour. Converted to time format for the hour. 
+    # display the most common start hour. Converted to time format for the hour.
     df['hour'] = df['Start Time'].values.astype('<M8[h]')
     df['hour'] = df['hour'].dt.time
     frequent_hour = df['hour'].mode()[0]
-    print("The most common time of travel is ", frequent_hour)
+    print("The most common time of the day for travel is ", frequent_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
